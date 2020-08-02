@@ -37,10 +37,12 @@ function CadastroCategoria() {
         .then(async (respostaDoServer) => {
           if (respostaDoServer.ok) {
             const resposta = await respostaDoServer.json();
-            setCategorias(resposta);
-            return;
-          }
-          throw new Error('Não foi possível pegar os dados');
+            console.log(...resposta)
+            setCategorias([
+              ...resposta
+            ]);
+           }
+          // throw new Error('Não foi possível pegar os dados');
         });
     }
   }, []);
@@ -92,6 +94,13 @@ function CadastroCategoria() {
           Cadastrar
         </Button>
       </form>
+
+
+        <div>
+          {/* Loading */}
+          Loading ...
+        </div>
+
 
       <ul>
         {categorias.map((categoria) => (
