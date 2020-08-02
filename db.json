@@ -1,0 +1,16 @@
+{
+    "categorias" : [
+       {
+        "id": 1,   
+        "nome" : "Front End",
+        "descrição" : "Eu est qui sunt consectetur eu enim dolore laborum mollit ipsum ea laborum.",
+        "cor" : "#cdb1ff"
+       },
+       {
+        "id": 2,   
+        "nome" : "Back End",
+        "descrição" : "Eu est qui sunt consectetur eu enim dolore laborum mollit ipsum ea laborum.",
+        "cor" : "#cdb1ff"
+       }
+    ]
+}

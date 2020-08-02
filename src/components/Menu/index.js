@@ -6,14 +6,14 @@ import {Link} from 'react-router-dom';
 
 function Menu() {
     return (
-        <hader>
+        <header>
             <nav className="Menu">
                <Link to="/">
                 <img className="logo" src={Logo} alt="Logo Front Flix" height="40"/>
                </Link>      
                <Button as={Link} className="ButtonLink" to="/cadastro/video">Novo Vídeo</Button>               
             </nav>
-        </hader>
+        </header>
     )
 }
 
