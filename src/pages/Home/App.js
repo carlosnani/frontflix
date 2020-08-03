@@ -12,9 +12,9 @@ function Home() {
     <div style={{background: "#141414"}}>
       <Menu />
       <BannerMain 
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-        url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa!"}
+        videoTitle={dadosIniciais.categorias[0].videos[1].titulo}
+        url={dadosIniciais.categorias[0].videos[1].url}
+        videoDescription={"Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e ..."}
       />
         
        <Carousel 
