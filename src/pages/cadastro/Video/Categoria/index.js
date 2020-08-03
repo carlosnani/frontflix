@@ -32,12 +32,12 @@ function CadastroCategoria() {
 
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categorias';
+      const URL = 'https://front-flix.herokuapp.com/categorias';
       fetch(URL)
         .then(async (respostaDoServer) => {
           if (respostaDoServer.ok) {
             const resposta = await respostaDoServer.json();
-            console.log(...resposta)
+
             setCategorias([
               ...resposta
             ]);
@@ -108,7 +108,7 @@ function CadastroCategoria() {
             {categoria.titulo}
           </li>
         ))}
-      </ul>
+      </ul>          
 
       <Link to="/">
         Ir para home
